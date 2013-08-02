@@ -1,0 +1,67 @@
+@import global
+@import fx
+@import topcoat-mobile-light
+@import nib
+
+.main-app-container
+  position absolute
+  width 100%
+  top 0
+  right 0
+  bottom 0
+  left 0
+  box-shadow 0 0 8px rgba(0,0,0,0.5)
+  border-left 1px solid rgba(255,255,255,0.2)
+  overflow hidden
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  background: transparent;
+  border: none;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #dfe2e2;
+
+.scrolling-container
+  position absolute
+  top 4rem
+  bottom 0
+  width 100%
+  overflow scroll
+  -webkit-overflow-scrolling touch
+
+.app-menu
+  position absolute
+  top 0
+  bottom 0
+  width 75%
+  overflow scroll
+  background-color #444849
+  color #c6c8c8
+
+.slide-in
+  margin-left 75%
+  transition margin-left 350ms
+
+.slide-out
+  margin-left 0%
+  transition margin-left 350ms
+
+.app-menu .topcoat-navigation-bar__title
+  color #fff
+
+.app-menu .topcoat-navigation-bar
+    background-color #595b5b
+    -webkit-box-shadow inset 0 -1px #333434, 0 1px rgba(0,0,0,0.15)
+    box-shadow inset 0 -1px #333434, 0 1px rgba(0,0,0,0.15)
+    border-bottom none
+
+.topcoat-navigation-bar
+    -webkit-box-shadow inset 0 -1px #B3B6B5, 0 1px rgba(0,0,0,0.15)
+    box-shadow inset 0 -1px #B3B6B5, 0 1px rgba(0,0,0,0.15)
+    border-bottom none
+

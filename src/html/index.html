@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="App">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-width, target-densitydpi=device-dpi">
+    <link rel="stylesheet" type="text/css" href="css/app.min.css">
+    <title>App Template</title>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <aside class="app-menu">
+
+        <div app-menu-header></div>
+
+        <div app-menu-content></div>
+
+    </aside>
+
+    <article id="main-app" class="main-app-container">
+
+        <header>
+
+            <div main-app-navigation></div>
+
+        </header>
+
+        <div class="scrolling-container">
+
+            <section>
+
+                <ng-view>
+
+                </ng-view>
+
+            </section>
+
+        </div>
+
+    </article>
+
+</div> <!-- End of wrapper -->
+
+<script src="phonegap.js"></script>
+<script src="js/libraries/angular.min.js"></script>
+<script src="js/libraries/hammer.min.js"></script>
+<script src="js/libraries/angular-hammer.js"></script>
+<script src="js/libraries/angular-local-storage.js"></script>
+<script src="js/appCompiled.min.js">
+
+</script>
+
+<script type="text/javascript">
+    phonegapApp.initialize();
+</script>
+
+</body>
+</html>
