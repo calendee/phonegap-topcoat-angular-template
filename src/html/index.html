@@ -12,7 +12,7 @@
 
 <body>
 
-<div id="wrapper">
+<div id="wrapper" ng-controller="MenuAndNavController">
 
     <aside class="app-menu">
 
@@ -22,7 +22,7 @@
 
     </aside>
 
-    <article id="main-app" class="main-app-container">
+    <article id="main-app" class="main-app-container" ng-class="{ 'menu-displayed': menuShown , 'menu-hidden': !menuShown }">
 
         <header>
 
