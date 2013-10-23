@@ -27,7 +27,7 @@ Installation:
 <code>> cd ~/MyAwesomeApp; rm -rf www/spec; rm www/spec.html; rm www/js/index.js; rm www/css/index.css; rm www/index.html
 </code>   
 
-* Install the Require Node Modules
+* Install the required Node modules
 
 <code>> cd ~/MyAwesomeApp; npm install
 </code>   
